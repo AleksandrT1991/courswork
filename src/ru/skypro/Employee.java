@@ -3,21 +3,22 @@ package ru.skypro;
 import java.util.Objects;
 
     public class Employee {
-        String fullName;
-        int department;
-        int salary;
-        static int counter;
-        int id;
+        private String fullName;
+        private int department;
+        private int salary;
+        private static int counter;
+        private int id;
 
         public Employee(String fullName, int department, int salary) {
             this.fullName = fullName;
             this.department = department;
             this.salary = salary;
-            this.id = getCounter();
-            counter++;
+            this.id = counter++;
+
         }
 //        /////////////////////////////
         public static int getCounter() {
+
             return counter;
         }
         public int getId() {
@@ -27,9 +28,11 @@ import java.util.Objects;
             return fullName;
         }
         public int getDepartment() {
+
             return department;
         }
         public int getSalary() {
+
             return salary;
         }
 //      /////////////////////////////////////////
@@ -45,9 +48,9 @@ import java.util.Objects;
 //      ////////////////////////////////////////
         @Override
         public String toString() {
-            return  "Ф.И.О сотрудника: " + fullName +
-                    " отдел №: " + this.department +
-                    " Заработная плата сотрудника: " + this.salary + " рублей " +
+            return  "Р¤.Р.Рћ СЃРѕС‚СЂСѓРґРЅРёРєР°: " + fullName +
+                    " РѕС‚РґРµР» в„–: " + this.department +
+                    " Р—Р°СЂР°Р±РѕС‚РЅР°СЏ РїР»Р°С‚Р° СЃРѕС‚СЂСѓРґРЅРёРєР°: " + this.salary + " СЂСѓР±Р»РµР№ " +
                     " ID: " + id;
         }
     }
