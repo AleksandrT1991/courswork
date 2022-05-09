@@ -17,10 +17,6 @@ import java.util.Objects;
 
         }
 //        /////////////////////////////
-        public static int getCounter() {
-
-            return counter;
-        }
         public int getId() {
             return id;
         }

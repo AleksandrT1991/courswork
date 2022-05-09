@@ -43,7 +43,7 @@ public class Main {
 
     private static void averageSalary(Employee[] employees) {
         int sum = monthSalary(employees);
-        int average = sum / employees.length;
+        double average = sum / employees.length;
         System.out.println("Среднее значение по зарплате" + " " + average);
     } // среднее значение зарплат
 
@@ -76,7 +76,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        employee[0] = new Employee("Воронина Алена Викторовна", 1, 51000);
+        employee[0] = new Employee("Воронина Алена Викторовна", 1, 51153);
         employee[1] = new Employee("Воробьев Александр Николаевич", 2, 50000);
         employee[2] = new Employee("Чередник Илья Андреевич", 3, 52000);
         employee[3] = new Employee("Цыхмистров Владимир Петрович", 4, 53000);
